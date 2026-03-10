@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="icons/icon-32.png" type="image/png" />
+    <title>SecurePass Studio</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <section class="brand">
+        <div class="brand-top">
+          <div class="brand-left">
+            <img class="logo" src="icons/icon-128.png" alt="SecurePass Studio logo" />
+            <div>
+              <h1>SecurePass Studio</h1>
+              <p>Check strength, spot patterns, and generate safer passwords.</p>
+            </div>
+          </div>
+          <!-- <a class="ghost-link" href="popup.html?full=1" target="_blank" rel="noopener">Open full page</a> -->
+        </div>
+        <div class="brand-meta">
+          <span>Local-only analysis</span>
+          <span>Zero sync</span>
+          <span>Fast checks</span>
+        </div>
+      </section>
+
+      <div class="panel-grid">
+        <section class="card delay-80">
+          <h2>Strength Check</h2>
+          <label for="passwordInput">Password to test</label>
+          <div class="row">
+            <div>
+              <input
+                id="passwordInput"
+                type="password"
+                placeholder="Type or paste a password"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+              />
+            </div>
+            <button class="toggle" id="toggleVisibility" type="button">Show</button>
+          </div>
+          <div class="mt-8">
+            <label for="nameInput">Name (used for analysis and generator)</label>
+            <input
+              id="nameInput"
+              type="text"
+              placeholder="Optional name"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+            />
+          </div>
+          <div class="inline mt-10">
+            <span class="score" id="scoreLabel">Score: 0</span>
+            <span class="badge" id="strengthLabel">No data</span>
+          </div>
+          <div class="meter">
+            <div class="meter-fill" id="meterFill"></div>
+          </div>
+          <div class="meta-grid">
+            <span class="meta" id="entropyLabel">Entropy: 0 bits</span>
+            <span class="meta" id="varietyLabel">Variety: 0/4</span>
+            <span class="meta" id="crackLabel">Crack time: -</span>
+          </div>
+          <ul class="insights" id="insightsList"></ul>
+        </section>
+
+        <section class="card delay-120">
+          <h2>Generator</h2>
+          <div class="inline">
+            <label for="lengthInput">Length</label>
+            <span class="badge" id="lengthValue">16</span>
+          </div>
+          <input id="lengthInput" class="range" type="range" min="8" max="32" value="16" />
+          <div class="controls">
+            <label class="chip"><input id="optNumbers" type="checkbox" checked />Numbers</label>
+            <label class="chip"><input id="optSymbols" type="checkbox" checked />Symbols</label>
+            <label class="chip"><input id="optMixCase" type="checkbox" checked />Mix case</label>
+            <label class="chip"><input id="optShuffle" type="checkbox" checked />Shuffle</label>
+          </div>
+          <div class="output">
+            <input
+              id="generatedOutput"
+              type="text"
+              readonly
+              placeholder="Generated password"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+            />
+            <button class="btn" id="generateBtn" type="button">Generate</button>
+          </div>
+          <button class="btn secondary mt-6 w-full" id="copyBtn" type="button">Copy to clipboard</button>
+          <div class="status" id="copyStatus">Ready to generate.</div>
+        </section>
+      </div>
+
+      <section class="card delay-160">
+        <h2>Legal</h2>
+        <div class="legal-links">
+          <a class="legal-link" href="terms.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+          <a class="legal-link" href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          <!-- <a class="legal-link accent" href="popup.html?full=1" target="_blank" rel="noopener">Open Full Page</a> -->
+        </div>
+      </section>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
