@@ -10,7 +10,6 @@
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-00F7FF?style=for-the-badge&logo=vercel"></a>
   <img src="https://img.shields.io/github/stars/your-username/password-checker?style=for-the-badge">
   <img src="https://img.shields.io/github/license/your-username/password-checker?style=for-the-badge">
 </p>
