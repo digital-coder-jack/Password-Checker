@@ -38,5 +38,5 @@ Your password is evaluated based on:
 
 ```text
 hello123   → Weak  
-Hello123   → Medium  
-H@llo123!  → Strong  
+Hello@2000   → Medium  
+Ylvbac&8@50  → Strong  
