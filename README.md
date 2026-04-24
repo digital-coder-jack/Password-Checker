@@ -39,7 +39,11 @@ Your password is evaluated based on:
 hello123   → Weak  
 Hello@2000   → Medium  
 Ylvbac&8@50  → Strong
+## 🛅 Password Checker Interface
 
+<div align="center">
+<img src="https://github.com/user-attachments/assets/b48280be-ba22-459a-aa41-267c7c6cd04d" width="500" alt="Password Checker Preview"/>
+</div>
 
 <div align="center">
   Crafted with ❤️ for developers who care about security<br/>
