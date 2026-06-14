@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f1f5ff" media="(prefers-color-scheme: light)" />
+
+    <!-- Primary SEO -->
+    <title>SecurePass Studio — Password Strength Checker & Generator</title>
+    <meta
+      name="description"
+      content="Free, privacy-first password strength checker. Analyse strength in real time, calculate entropy, estimate crack time, detect breaches, generate strong passwords and export a PDF report. 100% client-side — nothing is ever stored or sent."
+    />
+    <meta name="keywords" content="password strength checker, password generator, password entropy, crack time estimator, password security, breach detection, secure password" />
+    <meta name="author" content="SecurePass Studio" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://securepass-studio.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SecurePass Studio — Password Strength Checker & Generator" />
+    <meta property="og:description" content="Real-time password strength analysis, entropy, crack-time estimation, breach detection and a secure generator. 100% client-side." />
+    <meta property="og:url" content="https://securepass-studio.vercel.app/" />
+    <meta property="og:image" content="/og-image.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SecurePass Studio — Password Strength Checker" />
+    <meta name="twitter:description" content="Real-time password strength analysis, entropy, crack-time estimation and breach detection. 100% client-side." />
+    <meta name="twitter:image" content="/og-image.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SecurePass Studio",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Privacy-first password strength checker and generator with entropy, crack-time estimation and breach detection."
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
